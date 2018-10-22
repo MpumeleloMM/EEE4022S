@@ -1,0 +1,3 @@
+add priority=1 dl_type=0x0800 nw_proto=* nw_ttl=1 actions=drop
+add priority=0 in_port=1 actions=dec_ttl,output:2
+add priority=0 in_port=2 actions=dec_ttl,output:1
